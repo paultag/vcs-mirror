@@ -1,0 +1,11 @@
+#!/bin/bash
+
+ROOT=/srv/vcs
+cd $ROOT
+echo "" > cronlog
+
+while read proj; do
+    ./update $proj >> cronlog 2>&1
+done < apps
+
+touch updated

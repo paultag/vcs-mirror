@@ -1,0 +1,27 @@
+#!/bin/bash
+
+export GIT_SSH="/srv/vcs/fakessh"
+
+PROJECT="$1"
+
+if [ "x$PROJECT" == "x" ]; then
+    echo "I need a project name as an argument."
+    exit 1
+fi
+
+#####
+
+ROOT="/srv/vcs/$PROJECT.git"
+echo "Sync'ing $ROOT."
+
+cd $ROOT
+
+# Alright. Let's sync up.
+
+git fetch origin
+git fetch origin --tags
+
+# Alright. Let's push out.
+
+git push push --all
+git push push --tags
