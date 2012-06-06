@@ -23,5 +23,4 @@ git fetch origin --tags
 
 # Alright. Let's push out.
 
-git push push --all
-git push push --tags
+git push push --mirror
