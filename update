@@ -18,6 +18,7 @@ cd $ROOT
 
 # Alright. Let's sync up.
 
+git remote update --prune
 git fetch origin
 git fetch origin --tags
 
