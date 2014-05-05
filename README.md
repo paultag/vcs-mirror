@@ -2,13 +2,13 @@ Repo mirror-er
 
 In your crontab, put something like:
 
-    */5 * * * * /vcs/docron
+    */5 * * * * /vcs/repos/docron
 
-(providing this repo is the root at /vcs)
+(providing this repo is the root at /vcs/repos)
 
 Things to mirror are subdirectories of this repo
 
-    [tag@lucifer:/vcs/fluxbox.git]$ git remote -v
+    [tag@lucifer:/vcs/repos/fluxbox.git]$ git remote -v
     origin  git://git.fluxbox.org/fluxbox.git (fetch)
     origin  git://git.fluxbox.org/fluxbox.git (push)
     push    git@github.com:fluxbox/fluxbox.git (fetch)
