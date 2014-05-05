@@ -1,3 +1,3 @@
 #!/bin/bash
 
-ssh -i /home/tag/.ssh/id_fredbot $@
+ssh -i ${VCS_MIRROR_KEY} $@
