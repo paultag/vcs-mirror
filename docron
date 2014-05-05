@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ROOT=/srv/vcs
+ROOT=/vcs
 cd $ROOT
 echo "" > cronlog
 

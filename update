@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export GIT_SSH="/srv/vcs/fakessh"
+export GIT_SSH="/vcs/fakessh"
 
 PROJECT="$1"
 
@@ -11,7 +11,7 @@ fi
 
 #####
 
-ROOT="/srv/vcs/$PROJECT.git"
+ROOT="/vcs/$PROJECT.git"
 echo "Sync'ing $ROOT."
 
 cd $ROOT
