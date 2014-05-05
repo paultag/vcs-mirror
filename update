@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export GIT_SSH="/vcs/fakessh"
+export GIT_SSH="/${VCS_MIRROR_CODE_ROOT}/fakessh"
 
 PROJECT="$1"
 
@@ -11,7 +11,7 @@ fi
 
 #####
 
-ROOT="/vcs/$PROJECT.git"
+ROOT="/${VCS_MIRROR_REPO_ROOT}/$PROJECT.git"
 echo "Sync'ing $ROOT."
 
 cd $ROOT

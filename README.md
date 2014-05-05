@@ -1,5 +1,11 @@
 Repo mirror-er
 
+Set:
+
+    VCS_MIRROR_KEY=/vcs/keys/my-key
+    VCS_MIRROR_CODE_ROOT=/opt/paultag/vcs/
+    VCS_MIRROR_REPO_ROOT=/vcs/repo/
+
 In your crontab, put something like:
 
     */5 * * * * /vcs/repos/docron

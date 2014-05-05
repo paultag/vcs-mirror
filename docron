@@ -1,7 +1,7 @@
 #!/bin/bash
 
-ROOT=/vcs/repos
-cd $ROOT
+# ROOT=/vcs/repos
+cd $VCS_MIRROR_CODE_ROOT
 echo "" > cronlog
 
 while read proj; do
