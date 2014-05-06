@@ -1,3 +1,3 @@
 #!/bin/bash
 
-ssh -i ${VCS_MIRROR_KEY} $@
+ssh -oStrictHostKeyChecking=no -i ${VCS_MIRROR_KEY} $@

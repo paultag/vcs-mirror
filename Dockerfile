@@ -4,6 +4,8 @@
 FROM        debian:unstable
 MAINTAINER  Paul R. Tagliamonte <paultag@debian.org>
 
+RUN apt-get update && apt-get install git -y
+
 ADD . /opt/paultag/vcs/
 
 ENV VCS_MIRROR_CODE_ROOT /opt/paultag/vcs/
