@@ -1,11 +1,9 @@
 #!/bin/bash
 
-# ROOT=/vcs/repos
 cd $VCS_MIRROR_CODE_ROOT
-echo "" > cronlog
 
 while read proj; do
-    ./update $proj >> cronlog 2>&1
+    ./update $proj 2>&1
 done < ${VCS_MIRROR_REPO_ROOT}/apps
 
 touch updated
